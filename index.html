@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Delivery Landing Page</title>
+	</head>
+	<body>
+		<div>
+			<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!-- <img class="main-bg" src="images/main-bg.jpg" alt=""> -->
+		<nav>
+			<div class="logo">
+				<a href="#"><img src="images/Designer.png" alt="Logo" /></a>
+			</div>
+			<div class="toggle">
+				<a href="#"><ion-icon name="menu-outline" style="color: #be3144"></ion-icon></a>
+			</div>
+			<ul class="menu">
+				<li><a href="#" class="menu-btn">Home</a></li>
+				<li><a href="#" class="menu-btn">Services</a></li>
+				<li><a href="#" class="menu-btn">Contact</a></li>
+				<li><a href="#" class="menu-btn">About Us</a></li>
+			</ul>
+		</nav>
+
+		<div class="txt-animation">
+			<div class="std-txt">Beyond</div>
+			<ul class="run-txt">
+				<li><span>Boundaries...</span></li>
+				<li><span>Expectations...</span></li>
+			</ul>
+		</div>
+		<p class="sub-txt">Delivering more than just packages!</p>
+		<p class="para">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum esse dolore non, quos eligendi
+			cum quo quasi placeat odio doloribus quaerat ducimus tempore ipsa voluptate officiis a
+			expedita sint facilis!
+		</p>
+
+		<button class="btn-title">
+			Order Now
+			<ion-icon class="hvr-icon-wobble-horizontal" name="arrow-forward-circle-outline"></ion-icon>
+		</button>
+
+		<img class="main-img" src="images/Img-1.png" alt="" />
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+		<script>
+			$(function () {
+				$(".toggle").on("click", function () {
+					if ($(".menu").hasClass("active")) {
+						$(".menu").removeClass("active");
+						$(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+					} else {
+						$(".menu").addClass("active");
+						$(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
